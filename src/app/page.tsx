@@ -32,7 +32,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 text-center">
+      <section className="container mx-auto px-4 py-8 text-center">
         <div className="max-w-4xl mx-auto">
           <Badge variant="secondary" className="mb-4">
             Entrega Lista
@@ -50,7 +50,7 @@ export default function Home() {
       </section>
 
       {/* Video Section */}
-      <section className="container mx-auto px-4 py-8">
+      <section className="container mx-auto ">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col items-center justify-center">
             <Button asChild className="mb-2">
