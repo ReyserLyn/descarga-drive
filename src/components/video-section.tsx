@@ -6,11 +6,11 @@ import WhatsAppButton from "./whatsapp-button";
 
 export default function VideoSection() {
   return (
-    <section className="container mx-auto ">
+    <section className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <div className="flex gap-2 items-center justify-center">
-            <Button asChild className="mb-2">
+          <div className="flex flex-col sm:flex-row gap-2 items-center justify-center mb-4">
+            <Button asChild className="w-full sm:w-auto">
               <Link
                 href="https://drive.google.com/file/d/1gzTV6f9DZOV5lwO2pBOFq16Y8-XUBlT1/view"
                 target="_blank"
@@ -20,7 +20,7 @@ export default function VideoSection() {
               </Link>
             </Button>
 
-            <Button asChild className="mb-2" variant="outline">
+            <Button asChild className="w-full sm:w-auto" variant="outline">
               <Link
                 href="https://drive.google.com/drive/folders/1IOCBejFeQ43YZqKoo21Be5Qs3ZPQyive?usp=sharing"
                 target="_blank"
@@ -30,8 +30,8 @@ export default function VideoSection() {
               </Link>
             </Button>
           </div>
-          <p className="text-slate-600 dark:text-slate-300 mb-4 text-sm flex items-center gap-2">
-            <Info className="h-4 w-4" />
+          <p className="text-slate-600 dark:text-slate-300 mb-6 text-sm flex items-center gap-2 text-center">
+            <Info className="h-4 w-4 flex-shrink-0" />
             Si tienes problemas para ver el video, puedes verlo en Google Drive.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function VideoSection() {
         </Card>
 
         <div className="text-center mt-8">
-          <p className="text-slate-600 dark:text-slate-300 mb-4">
+          <p className="text-slate-600 dark:text-slate-300 mb-4 px-4">
             ¿Tienes alguna pregunta o comentario sobre el video?
           </p>
           <WhatsAppButton />

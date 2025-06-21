@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function HeroSection() {
   return (
-    <section className="container mx-auto px-4 py-8 text-center">
+    <section className="container mx-auto px-4 py-4 md:py-8 text-center">
       <div className="max-w-4xl mx-auto">
         <Badge variant="secondary" className="mb-4">
           Entrega Lista

@@ -4,7 +4,10 @@ import { Button } from "./ui/button";
 
 export default function WhatsAppButton() {
   return (
-    <Button asChild className="bg-green-600 hover:bg-green-700">
+    <Button
+      asChild
+      className="bg-green-600 hover:bg-green-700 w-full sm:w-auto"
+    >
       <Link
         href="https://api.whatsapp.com/send?phone=51987471074&text=%5BTutorial%20descarga%20drive%5D%20Duda%3A%20"
         target="_blank"

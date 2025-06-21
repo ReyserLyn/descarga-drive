@@ -10,21 +10,21 @@ export default function FAQSection() {
     <section className="container mx-auto px-4 py-16">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4 px-4">
             Información Adicional
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-300">
+          <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 px-4">
             Algunas preguntas que podrías tener sobre tu video
           </p>
         </div>
 
         <Accordion type="multiple" className="w-full">
           <AccordionItem value="item-1">
-            <AccordionTrigger className="text-left">
+            <AccordionTrigger className="text-left font-bold text-sm sm:text-base px-2">
               ¿Cuál es la diferencia entre URL válida y URL bruta?
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-4">
+              <div className="space-y-4 px-2">
                 <p>
                   <strong>
                     La URL bruta necesita ser limpiada para funcionar
@@ -32,11 +32,11 @@ export default function FAQSection() {
                   </strong>
                 </p>
 
-                <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                   <p className="text-sm mb-2">
                     <strong>❌ URL Bruta (no funciona):</strong>
                   </p>
-                  <code className="text-xs break-all bg-red-100 dark:bg-red-900 p-2 rounded block">
+                  <code className="text-xs break-all bg-red-100 dark:bg-red-900 p-2 rounded block overflow-x-auto">
                     https://rr3---sn-njaeyn7s.c.drive.google.com/videoplayback?expire=1750490867&ei=wzRWaOa7COuso-wPmLPE-QQ&ip=190.12.73.68&id=b80d09c18eedc934&itag=140&source=webdrive&requiressl=yes&xpc=EghonaK1InoBAQ==&met=1750480067,&mh=Ur&mm=32,26&mn=sn-njaeyn7s,sn-bg0s7nlr&ms=su,onr&mv=m&mvi=3&pl=24&rms=su,su&sc=yes&ttl=transient&susc=dr&obr=https://drive.google.com&svpuc=1&driveid=1GBvltileNpvVF9ZOHy8OhvoDDdr2b0YP&app=explorer&eaua=OfoyTv86HTM&mime=audio/mp4&vprv=1&prv=1&rqh=1&gir=yes&clen=5565128&dur=343.817&lmt=1750475668728851&mt=1750479652&fvip=4&subapp=DRIVE_WEB_FILE_VIEWER&txp=0000224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,ttl,susc,obr,svpuc,driveid,app,eaua,mime,vprv,prv,rqh,gir,clen,dur,lmt&sig=AJfQdSswRQIhAPidxe9REx0QT-tkrPrmNdE71BqVxBn9ZMJ3yL-EmreYAiALynLLQMJ8DYoWqEuulsxuqdb5MfKXBDpJrDicoWEwQA==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms,sc&lsig=APaTxxMwRgIhAIFx6peRhErJcok4aA1AVHLlyq9zqz_LWGwtvq_zbJEoAiEAh7JYNqiGB_bU3g1DISyA0BteIO_q3ljzjT83KE_UnFA=&alr=yes&cpn=qpUnCj3C9GhuN8Qi&c=WEB_EMBEDDED_PLAYER&cver=1.20250616.22.00
                     <strong>
                       &range=5433922-5565127&rn=32&rbuf=16075&ump=1&srfvp=1
@@ -44,30 +44,30 @@ export default function FAQSection() {
                   </code>
                 </div>
 
-                <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                   <p className="text-sm mb-2">
                     <strong>✅ URL Válida (funciona):</strong>
                   </p>
-                  <code className="text-xs break-all bg-green-100 dark:bg-green-900 p-2 rounded block">
+                  <code className="text-xs break-all bg-green-100 dark:bg-green-900 p-2 rounded block overflow-x-auto">
                     https://rr3---sn-njaeyn7s.c.drive.google.com/videoplayback?expire=1750490867&ei=wzRWaOa7COuso-wPmLPE-QQ&ip=190.12.73.68&id=b80d09c18eedc934&itag=140&source=webdrive&requiressl=yes&xpc=EghonaK1InoBAQ==&met=1750480067,&mh=Ur&mm=32,26&mn=sn-njaeyn7s,sn-bg0s7nlr&ms=su,onr&mv=m&mvi=3&pl=24&rms=su,su&sc=yes&ttl=transient&susc=dr&obr=https://drive.google.com&svpuc=1&driveid=1GBvltileNpvVF9ZOHy8OhvoDDdr2b0YP&app=explorer&eaua=OfoyTv86HTM&mime=audio/mp4&vprv=1&prv=1&rqh=1&gir=yes&clen=5565128&dur=343.817&lmt=1750475668728851&mt=1750479652&fvip=4&subapp=DRIVE_WEB_FILE_VIEWER&txp=0000224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,ttl,susc,obr,svpuc,driveid,app,eaua,mime,vprv,prv,rqh,gir,clen,dur,lmt&sig=AJfQdSswRQIhAPidxe9REx0QT-tkrPrmNdE71BqVxBn9ZMJ3yL-EmreYAiALynLLQMJ8DYoWqEuulsxuqdb5MfKXBDpJrDicoWEwQA==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms,sc&lsig=APaTxxMwRgIhAIFx6peRhErJcok4aA1AVHLlyq9zqz_LWGwtvq_zbJEoAiEAh7JYNqiGB_bU3g1DISyA0BteIO_q3ljzjT83KE_UnFA=&alr=yes&cpn=qpUnCj3C9GhuN8Qi&c=WEB_EMBEDDED_PLAYER&cver=1.20250616.22.00
                   </code>
                 </div>
 
-                <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                   <p className="text-sm mb-2">
                     <strong>🔧 Cómo limpiar la URL:</strong>
                   </p>
                   <ol className="list-decimal pl-6 space-y-1 text-sm">
                     <li>
                       Busca el parámetro{" "}
-                      <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded">
+                      <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-xs">
                         &range=
                       </code>{" "}
                       en la URL
                     </li>
                     <li>
                       Elimina{" "}
-                      <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded">
+                      <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-xs">
                         &range=
                       </code>{" "}
                       y todo lo que sigue después
@@ -75,21 +75,21 @@ export default function FAQSection() {
                   </ol>
                 </div>
 
-                <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                   <p className="text-sm mb-2">
                     <strong>🎯 Identificar Video vs Audio:</strong>
                   </p>
                   <ul className="list-disc pl-6 space-y-1 text-sm">
                     <li>
                       Busca{" "}
-                      <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded">
+                      <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-xs">
                         mime=video/mp4
                       </code>{" "}
                       → Es VIDEO
                     </li>
                     <li>
                       Busca{" "}
-                      <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded">
+                      <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-xs">
                         mime=audio/mp4
                       </code>{" "}
                       → Es AUDIO
@@ -106,29 +106,31 @@ export default function FAQSection() {
           </AccordionItem>
 
           <AccordionItem value="item-2">
-            <AccordionTrigger className="text-left">
+            <AccordionTrigger className="text-left font-bold text-sm sm:text-base px-2">
               ¿Cómo puedo descargar el video tutorial?
             </AccordionTrigger>
             <AccordionContent>
-              Puedes descargar el video tutorial directamente desde Google Drive
-              haciendo clic en el botón de descarga. Si tienes problemas,
-              contáctame por WhatsApp y te ayudo con el proceso.
+              <div className="px-2">
+                Puedes descargar el video tutorial directamente desde Google
+                Drive haciendo clic en el botón de descarga. Si tienes
+                problemas, contáctame por WhatsApp y te ayudo con el proceso.
+              </div>
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-3">
-            <AccordionTrigger className="text-left">
-              Descarga de librerias FFMPEG
+            <AccordionTrigger className="text-left font-bold text-sm sm:text-base px-2">
+              Descarga de librerías FFMPEG
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-4">
+              <div className="space-y-4 px-2">
                 <p>
                   <strong>
                     Para seguir el tutorial, necesitarás descargar FFMPEG:
                   </strong>
                 </p>
 
-                <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                   <p className="text-sm mb-2">
                     <strong>Página de FFMPEG:</strong>
                   </p>
@@ -136,13 +138,13 @@ export default function FAQSection() {
                     href="https://www.gyan.dev/ffmpeg/builds/"
                     target="_blank"
                     rel="noopener"
-                    className="text-blue-600 hover:underline text-sm break-all"
+                    className="text-blue-600 hover:underline text-sm break-all block"
                   >
                     https://www.gyan.dev/ffmpeg/builds/
                   </a>
                 </div>
 
-                <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                   <p className="text-sm mb-2">
                     <strong>Enlace de descarga:</strong>
                   </p>
@@ -150,20 +152,20 @@ export default function FAQSection() {
                     href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z"
                     target="_blank"
                     rel="noopener"
-                    className="text-blue-600 hover:underline text-sm break-all"
+                    className="text-blue-600 hover:underline text-sm break-all block"
                   >
                     https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z
                   </a>
                 </div>
 
-                <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                   <p className="text-sm mb-2">
                     <strong>
                       Comando para unir video y audio (se utiliza en el minuto
                       10:35 del video):
                     </strong>
                   </p>
-                  <code className="text-sm bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded">
+                  <code className="text-xs sm:text-sm bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded block overflow-x-auto">
                     ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a copy
                     out_file.mp4
                   </code>
@@ -178,11 +180,11 @@ export default function FAQSection() {
           </AccordionItem>
 
           <AccordionItem value="item-4">
-            <AccordionTrigger className="text-left">
+            <AccordionTrigger className="text-left font-bold text-sm sm:text-base px-2">
               ¿Cómo Google Drive desactiva la opción de descargar sus videos?
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-3">
+              <div className="space-y-3 px-2">
                 <p>
                   Google Drive desactiva las descargas de video por varias
                   razones:
@@ -202,22 +204,22 @@ export default function FAQSection() {
           </AccordionItem>
 
           <AccordionItem value="item-5">
-            <AccordionTrigger className="text-left">
+            <AccordionTrigger className="text-left font-bold text-sm sm:text-base px-2">
               ¿Se pierde calidad al unir audio y video con ffmpeg?
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-3">
+              <div className="space-y-3 px-2">
                 <p>
                   <strong>No se pierde calidad</strong> cuando usas los
                   parámetros correctos de ffmpeg:
                 </p>
-                <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
-                  <code className="text-sm">
+                <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
+                  <code className="text-xs sm:text-sm block overflow-x-auto">
                     ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a copy
                     out_file.mp4
                   </code>
                 </div>
-                <ul className="list-disc pl-6 space-y-2">
+                <ul className="list-disc pl-6 space-y-2 text-sm">
                   <li>
                     <strong>-c:v copy:</strong> Copia el video sin recodificar
                     (sin pérdida)
@@ -244,19 +246,19 @@ export default function FAQSection() {
           </AccordionItem>
 
           <AccordionItem value="item-6">
-            <AccordionTrigger className="text-left">
+            <AccordionTrigger className="text-left font-bold text-sm sm:text-base px-2">
               ¿Dónde encuentro las variables de sistema en Windows para añadir
               la ruta de ffmpeg?
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-4">
+              <div className="space-y-4 px-2">
                 <p>
                   <strong>
                     Pasos para agregar ffmpeg a las variables de sistema:
                   </strong>
                 </p>
 
-                <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                   <p className="text-sm mb-2">
                     <strong>Paso 1:</strong> Descargar WinRAR para extraer
                     archivos .7z
@@ -265,13 +267,13 @@ export default function FAQSection() {
                     href="https://www.winrar.es/descargas"
                     target="_blank"
                     rel="noopener"
-                    className="text-blue-600 hover:underline text-sm"
+                    className="text-blue-600 hover:underline text-sm block"
                   >
                     https://www.winrar.es/descargas
                   </a>
                 </div>
 
-                <ol className="list-decimal pl-6 space-y-2">
+                <ol className="list-decimal pl-6 space-y-2 text-sm">
                   <li>
                     Presiona{" "}
                     <kbd className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-xs">
@@ -280,7 +282,7 @@ export default function FAQSection() {
                   </li>
                   <li>
                     Escribe{" "}
-                    <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-sm">
+                    <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-xs">
                       sysdm.cpl
                     </code>{" "}
                     y presiona Enter
@@ -301,7 +303,7 @@ export default function FAQSection() {
                   </li>
                   <li>
                     Ejemplo:{" "}
-                    <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-sm">
+                    <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-xs">
                       C:\ffmpeg
                     </code>
                   </li>
@@ -319,11 +321,11 @@ export default function FAQSection() {
           </AccordionItem>
 
           <AccordionItem value="item-7">
-            <AccordionTrigger className="text-left">
+            <AccordionTrigger className="text-left font-bold text-sm sm:text-base px-2">
               ¿Cómo entro al cmd desde el explorador de archivos?
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-4">
+              <div className="space-y-4 px-2">
                 <p>
                   <strong>
                     Hay varias formas de abrir el cmd en la carpeta que
@@ -332,7 +334,7 @@ export default function FAQSection() {
                 </p>
 
                 <div className="space-y-3">
-                  <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                  <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                     <p className="text-sm mb-2">
                       <strong>Método 1: Desde la barra de direcciones</strong>
                     </p>
@@ -347,7 +349,7 @@ export default function FAQSection() {
                       </li>
                       <li>
                         Escribe{" "}
-                        <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded">
+                        <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-xs">
                           cmd
                         </code>{" "}
                         y presiona Enter
@@ -355,7 +357,7 @@ export default function FAQSection() {
                     </ol>
                   </div>
 
-                  <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                  <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                     <p className="text-sm mb-2">
                       <strong>Método 2: Navegación manual</strong>
                     </p>
@@ -363,14 +365,14 @@ export default function FAQSection() {
                       <li>Abre cmd normalmente (Windows + R, escribe "cmd")</li>
                       <li>
                         Usa{" "}
-                        <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded">
+                        <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-xs">
                           cd
                         </code>{" "}
                         para navegar
                       </li>
                       <li>
                         Ejemplo:{" "}
-                        <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded">
+                        <code className="bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded text-xs break-all">
                           cd C:\Users\tu_usuario\Downloads
                         </code>
                       </li>
@@ -387,11 +389,11 @@ export default function FAQSection() {
           </AccordionItem>
 
           <AccordionItem value="item-8">
-            <AccordionTrigger className="text-left">
+            <AccordionTrigger className="text-left font-bold text-sm sm:text-base px-2">
               ¿Cómo abrir las herramientas de desarrollo?
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-4">
+              <div className="space-y-4 px-2">
                 <p>
                   <strong>
                     Hay 3 formas principales de abrir las herramientas de
@@ -400,7 +402,7 @@ export default function FAQSection() {
                 </p>
 
                 <div className="space-y-3">
-                  <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                  <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                     <p className="text-sm mb-2">
                       <strong>Método 1: Atajo de teclado principal</strong>
                     </p>
@@ -412,7 +414,7 @@ export default function FAQSection() {
                     </p>
                   </div>
 
-                  <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                  <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                     <p className="text-sm mb-2">
                       <strong>Método 2: Tecla de función</strong>
                     </p>
@@ -424,7 +426,7 @@ export default function FAQSection() {
                     </p>
                   </div>
 
-                  <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+                  <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-lg">
                     <p className="text-sm mb-2">
                       <strong>Método 3: Desde el menú del navegador</strong>
                     </p>
@@ -447,9 +449,8 @@ export default function FAQSection() {
 
                 <p className="text-sm text-slate-600 dark:text-slate-400">
                   <strong>Tip:</strong> Una vez abiertas, ve a la pestaña{" "}
-                  <strong>"Network"</strong> o <strong>"Red"</strong> y filtra
-                  por "playback" para capturar las URLs de descarga como se
-                  muestra en el tutorial.
+                  <strong>"Network"</strong> o <strong>"Red"</strong> para
+                  capturar las URLs de descarga como se muestra en el video.
                 </p>
               </div>
             </AccordionContent>
